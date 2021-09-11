@@ -11,17 +11,17 @@
  
         <tr>
           <th><%= f.label :startTime ,"開始日" %></th>
-          <td><%= f.text_field :startTime ,size:"50"%></td>
+          <td><%= f.date_field :startTime,size:"50"%></td>
         </tr>
  
         <tr>
           <th><%= f.label :endTime ,"終了日" %></th>
-          <td><%= f.text_field :endTime ,size:"50"%></td>
+          <td><%= f.date_field :endTime,size:"50"%></td>
         </tr>
         
        <tr>
         <th><%= f.label :dayAll ,"終日" %></th>
-       <td><%= check_box_tag :dayAll%><p>終日の場合はチェックをします</p></td>
+       <td><%= f.check_box :dayAll%><p>終日の場合はチェックをします</p></td>
        </tr> 
        
         <tr>

@@ -1,4 +1,5 @@
 class SchedulesController < ApplicationController
+  
   def index
    @plan=Plan.all#planテーブルのデータ取得
    
@@ -10,9 +11,9 @@ class SchedulesController < ApplicationController
   end
   
     def create
-      require'date'
       @plan = Plan.new(plan_params)
       @plan.save
+      
        if @plan.save
          flash[:notice] = "ユーザーを新規登録しました"
          redirect_to "/"

@@ -16,12 +16,10 @@
    <%= yield %>
    
    <footer>
-     <table>
-   <td><h1>現在の日時：<%=Time.zone.now.to_s(:datetime_jp)%> </h1></td>
-   
-    <td><h1>スケジュール合計:<%=Plan.count %></h1></td>
+     
+   <h1>現在の日時：<%=Time.zone.now.to_s(:datetime_jp)%> スケジュール合計:<%=Plan.count %></h1>
     
-    </table>
+    
    </footer>
    
   </body>
